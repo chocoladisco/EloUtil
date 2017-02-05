@@ -13,7 +13,7 @@ class EloUtil{
         return rating + k * (actualrating - expectedrating)
     }
 
-    static calcNewRating(rating, ratingopponent, result){
+    static _calcNewRating(rating, ratingopponent, result){
         var expected = this.expected(rating, ratingopponent)
         var k = 64
         var result = this._newRating(rating, expected, result, k)
@@ -21,6 +21,14 @@ class EloUtil{
             return 0
         }
         return result
+    }
+
+    static win(rating, ratingopponent){
+        return this._calcNewRating(rating, ratingopponent, 1)
+    }
+
+    static lose(rating, ratingopponent){
+        return this._calcNewRating(rating, ratingopponent, 0)
     }
 }
 
