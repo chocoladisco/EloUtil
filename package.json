@@ -1,5 +1,5 @@
 {
-  "name": "elo",
+  "name": "eloutil",
   "version": "1.0.1",
   "description": "a small package to calculate elo ratings",
   "main": "index.js",
