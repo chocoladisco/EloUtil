@@ -16,7 +16,11 @@ class EloUtil{
     static calcNewRating(rating, ratingopponent, result){
         var expected = this.expected(rating, ratingopponent)
         var k = 32
-        return this._newRating(rating, expected, result, k)
+        var result = this._newRating(rating, expected, result, k)
+        if (result < 0) {
+            return 0
+        }
+        return result;
     }
 }
 
