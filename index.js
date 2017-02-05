@@ -12,6 +12,12 @@ class EloUtil{
     static _newRating(rating, expectedrating, actualrating, k){
         return rating + k * (actualrating - expectedrating)
     }
+
+    static calcNewRating(rating, ratingopponent, result){
+        var expected = expected(rating, ratingopponent)
+        var k = 32
+        return _newRating(rating, expected, result, k)
+    }
 }
 
 module.exports = EloUtil
