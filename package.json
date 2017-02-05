@@ -4,7 +4,7 @@
   "description": "a small package to calculate elo ratings",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/chocoladisco/elo/issues"
   },
-  "homepage": "https://github.com/chocoladisco/elo#readme"
+  "homepage": "https://github.com/chocoladisco/elo#readme",
+  "devDependencies": {
+    "standard": "^8.6.0"
+  }
 }
