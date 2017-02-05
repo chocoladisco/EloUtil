@@ -20,7 +20,7 @@ class EloUtil{
         if (result < 0) {
             return 0
         }
-        return result;
+        return Math.round(result)
     }
 }
 
