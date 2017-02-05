@@ -1,7 +1,7 @@
 class EloUtil{
     static expected(rating, ratingopponent){
-        var qa = _q(rating)
-        var qb = _q(ratingopponent)
+        var qa = this._q(rating)
+        var qb = this._q(ratingopponent)
         return qa / (qa + qb)
     }
 
@@ -14,9 +14,9 @@ class EloUtil{
     }
 
     static calcNewRating(rating, ratingopponent, result){
-        var expected = expected(rating, ratingopponent)
+        var expected = this.expected(rating, ratingopponent)
         var k = 32
-        return _newRating(rating, expected, result, k)
+        return this._newRating(rating, expected, result, k)
     }
 }
 
