@@ -1,0 +1,22 @@
+{
+  "name": "elo",
+  "version": "1.0.0",
+  "description": "a small package to calculate elo ratings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chocoladisco/elo.git"
+  },
+  "keywords": [
+    "elo",
+    "rating"
+  ],
+  "author": "chocoladisco",
+  "bugs": {
+    "url": "https://github.com/chocoladisco/elo/issues"
+  },
+  "homepage": "https://github.com/chocoladisco/elo#readme"
+}
