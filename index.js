@@ -17,10 +17,7 @@ class EloUtil {
     var expected = this.expected(rating, ratingopponent)
     var k = 64
     var rate = this._newRating(rating, expected, result, k)
-    if (rate < 0) {
-      return 0
-    }
-    return rate
+    return rate ? rate : 0
   }
 
   static win (rating, ratingopponent) {
